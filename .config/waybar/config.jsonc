@@ -23,12 +23,12 @@
         "temperature",
         //"backlight",
         "keyboard-state",
-        "sway/language",
+        //"sway/language",
         "battery",
         "battery#bat2",
         "tray",
-        "clock",
-        "custom/power"
+        "clock"
+        //"custom/power"
     ],
     "hyprland/workspaces": {
         "disable-scroll": true,
