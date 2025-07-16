@@ -1,0 +1,12 @@
+export XDG_CONFIG_HOME=$HOME/.config
+
+alias dofi='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+export DOTFILES=$HOME/.dotfiles
+
+alias e='nvim'
+
+# automatically start a devbox shell if devbox.json exists
+if [[ -f devbox.json && $DEVBOX_SHELL_ENABLED != 1 && $TERM_PROGRAM != "vscode" ]]; then
+    devbox shell
+fi
+
