@@ -70,12 +70,3 @@ window#waybar {
     color: #cc241d;
     border-bottom: 4px solid #cc241d;
 }
-
-#tray menu * {
-    background: #1d2021;
-}
-
-#tray menu menuitem:hover {
-  background-color: @color7;
-  color: @background;
-}

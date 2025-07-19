@@ -15,17 +15,17 @@
     "modules-right": [
         "mpd",
         "idle_inhibitor",
+        "network",
         "pulseaudio",
-        //"network",
-        "power-profiles-daemon",
-        "cpu",
-        "memory",
-        "temperature",
+        //"power-profiles-daemon",
+        //"cpu",
+        //"memory",
+        //"temperature",
         //"backlight",
-        "keyboard-state",
+        //"keyboard-state",
         //"sway/language",
         "battery",
-        "battery#bat2",
+        //"battery#bat2",
         "tray",
         "clock"
         //"custom/power"
@@ -106,8 +106,9 @@
     },
     "clock": {
         // "timezone": "America/New_York",
+        "format": "{:%a %d.%m. %H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "on-click": "zen-browser --new-window calendar.google.com --kiosk"
     },
     "cpu": {
         "format": "{usage}% ",
