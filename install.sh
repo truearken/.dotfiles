@@ -1,7 +1,7 @@
 # !/usr/bin/env bash
 
 # pacman packages
-sudo pacman -S --needed zsh tmux k9s fzf xclip direnv kubectl gcc lua unzip ripgrep podman jq neovim less go
+sudo pacman -S --needed zsh tmux k9s fzf xclip direnv kubectl gcc lua unzip ripgrep podman jq neovim less go nodejs github-cli
 
 # shell
 if [[ $SHELL != "/usr/bin/zsh" ]]; then
