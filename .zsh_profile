@@ -2,6 +2,7 @@ export XDG_CONFIG_HOME=$HOME/.config
 
 alias dofi='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 export DOTFILES=$HOME/.dotfiles
+export REGISTRY_AUTH_FILE=$HOME/.config/containers/auth.json
 
 alias e='nvim'
 
