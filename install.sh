@@ -1,7 +1,9 @@
 # !/usr/bin/env bash
 
 # pacman packages
-sudo pacman -S --needed zsh tmux k9s fzf xclip direnv kubectl gcc lua unzip ripgrep podman jq neovim less go nodejs github-cli diffutils
+sudo pacman -S --needed \
+    zsh tmux k9s fzf xclip direnv kubectl gcc lua unzip ripgrep podman jq neovim less go nodejs \
+    npm jdk-openjdk github-cli diffutils
 
 # shell
 if [[ $SHELL != "/usr/bin/zsh" ]]; then
@@ -12,6 +14,7 @@ fi
 if ! test -f /usr/local/bin/devbox; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     mv .zshrc.pre-oh-my-zsh .zshrc
+    echo "kill shell to continue installation"
 fi
 
 # nix
