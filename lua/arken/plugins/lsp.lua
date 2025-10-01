@@ -107,6 +107,19 @@ return {
 				javascript = { "prettier" },
 				typescript = { "prettier" },
 			},
+			format_on_save = function(bufnr)
+				local enable_filetypes = { go = true }
+				local lsp_format_opt
+				if not enable_filetypes[vim.bo[bufnr].filetype] then
+					lsp_format_opt = "never"
+				else
+					lsp_format_opt = "fallback"
+				end
+				return {
+					timeout_ms = 500,
+					lsp_format = lsp_format_opt,
+				}
+			end,
 		})
 		vim.keymap.set("n", "<leader>f", function()
 			require("conform").format({ async = true, lsp_format = "fallback" })

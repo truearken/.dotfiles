@@ -1,5 +1,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+vim.g.ftplugin_sql_omni_key = "<C-p>"
 
 vim.keymap.set("n", "<leader>fe", vim.cmd.Ex)
 
@@ -26,10 +27,6 @@ vim.keymap.set("n", "<C-h>", ":wincmd h<CR>")
 vim.keymap.set("n", "<C-j>", ":wincmd j<CR>")
 vim.keymap.set("n", "<C-l>", ":wincmd l<CR>")
 vim.keymap.set("n", "<C-k>", ":wincmd k<CR>")
-
--- comment
-vim.keymap.set("v", "<leader>ci", "_<C-v>I// <Esc>")
-vim.keymap.set("v", "<leader>cr", [[: s/\/\/ //<CR>]])
 
 -- some go keybinds
 vim.keymap.set("n", "<leader>ee", "oif err != nil {<CR>}<Esc>Oreturn err<Esc>") -- i stole this from prime
