@@ -3,7 +3,7 @@
 # pacman packages
 sudo pacman -S --needed \
     zsh tmux k9s fzf xclip direnv kubectl gcc lua unzip ripgrep podman jq neovim less go nodejs \
-    npm jdk-openjdk github-cli diffutils
+    npm jdk-openjdk github-cli diffutils pyenv
 
 # shell
 if [[ $SHELL != "/usr/bin/zsh" ]]; then
