@@ -5,6 +5,8 @@ export DOTFILES=$HOME/.dotfiles
 export REGISTRY_AUTH_FILE=$HOME/.config/containers/auth.json
 
 alias e='nvim'
+alias yk='xclip -sel clip'
+alias pr='xclip -sel clip -o'
 
 # automatically start a devbox shell if devbox.json exists
 if [[ -f devbox.json && $DEVBOX_SHELL_ENABLED != 1 && $TERM_PROGRAM != "vscode" ]]; then
