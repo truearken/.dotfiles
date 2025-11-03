@@ -31,3 +31,24 @@ vim.keymap.set("n", "<C-k>", ":wincmd k<CR>")
 -- some go keybinds
 vim.keymap.set("n", "<leader>ee", "oif err != nil {<CR>}<Esc>Oreturn err<Esc>") -- i stole this from prime
 vim.keymap.set("n", "<leader>ei", "ddkIif <Esc>A; err != nil {<Esc>")
+
+-- "native harpoon" credits to Alex Sokol
+vim.keymap.set("n", "<leader>a", function()
+	vim.cmd("argadd %")
+	vim.cmd("argdedup")
+end)
+
+vim.keymap.set("n", "<leader>l", vim.cmd.args)
+
+vim.keymap.set("n", "'w", function()
+	vim.cmd("silent! 1argument")
+end)
+vim.keymap.set("n", "'a", function()
+	vim.cmd("silent! 2argument")
+end)
+vim.keymap.set("n", "'s", function()
+	vim.cmd("silent! 3argument")
+end)
+vim.keymap.set("n", "'d", function()
+	vim.cmd("silent! 4argument")
+end)
