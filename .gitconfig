@@ -1,6 +1,11 @@
 [user]
   name = truearken
   email = vodelsup@gmail.com
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/usr/bin/gh auth git-credential
+
 [includeIf "gitdir:~/work/"]
     path = ~/.gitconfig-work
 
