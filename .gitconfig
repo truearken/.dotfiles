@@ -1,5 +1,9 @@
-[include]
-    path = ~/.gitconfiglocal
+[user]
+  name = truearken
+  email = vodelsup@gmail.com
+[includeIf "gitdir:~/work/"]
+    path = ~/.gitconfig-work
+
 [alias]
     s = status -sb
     pl = pull

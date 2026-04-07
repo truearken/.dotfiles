@@ -8,6 +8,8 @@ alias e='nvim'
 alias yk='xclip -sel clip'
 alias pr='xclip -sel clip -o'
 
+export PATH=~/.npm-global/bin:$PATH
+
 # automatically start a devbox shell if devbox.json exists
 if [[ -f devbox.json && $DEVBOX_SHELL_ENABLED != 1 && $TERM_PROGRAM != "vscode" ]]; then
     devbox shell
